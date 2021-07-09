@@ -1,6 +1,7 @@
 # translation of pavucontrol.master-tx.po to Simplified Chinese
 # 甘露 (Gan Lu) <rhythm.gan@gmail.com>, 2008.msgid "".
 # Leah Liu <lliu@redhat.com>, 2009.
+# Zhou Nan <zhounan@nfschina.com>, 2021.
 # Simplified Chinese Version of pavucontrol.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
@@ -9,8 +10,8 @@ msgstr ""
 "Project-Id-Version: pavucontrol.master-tx\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-03-08 16:48+0200\n"
-"PO-Revision-Date: 2009-04-01 21:43+1000\n"
-"Last-Translator: Leah Liu <lliu@redhat.com>\n"
+"PO-Revision-Date: 2021-07-09 09:36+0800\n"
+"Last-Translator: Zhou Nan <zhounan@nfschina.com>\n"
 "Language-Team: Simplified Chinese <zh@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -35,7 +36,9 @@ msgid ""
 "pavucontrol;Microphone;Volume;Fade;Balance;Headset;Speakers;Headphones;Audio;"
 "Mixer;Output;Input;Devices;Playback;Recording;System Sounds;Sound Card;"
 "Settings;Preferences;"
-msgstr ""
+msgstr "音频控制工具；麦克风；音量；衰减；平衡；耳机；扬声器；听筒；音频；"
+"混音器；输出；输入；设备；重放；录音；系统声音；声效卡；"
+"设置；偏好"
 
 #: ../src/pavucontrol.glade.h:1
 msgid "<b>left-front</b>"
@@ -86,7 +89,7 @@ msgstr "PCM"
 
 #: ../src/pavucontrol.glade.h:13
 msgid "AC-3"
-msgstr ""
+msgstr "AC-3"
 
 #: ../src/pavucontrol.glade.h:14
 msgid "DTS"
@@ -94,7 +97,7 @@ msgstr "DTS"
 
 #: ../src/pavucontrol.glade.h:15
 msgid "E-AC-3"
-msgstr ""
+msgstr "E-AC-3"
 
 #: ../src/pavucontrol.glade.h:16
 msgid "MPEG"
@@ -230,11 +233,11 @@ msgstr "方向"
 
 #: ../src/pavucontrol.cc:100 ../src/pavucontrol.cc:125
 msgid "list-codecs message response could not be parsed correctly"
-msgstr ""
+msgstr "无法正确解析 list-codecs 的响应消息"
 
 #: ../src/pavucontrol.cc:143
 msgid "get-codec message response could not be parsed correctly"
-msgstr ""
+msgstr "无法正确解析 Get-codec 的响应消息"
 
 #: ../src/pavucontrol.cc:158 ../src/cardwidget.cc:144
 #, fuzzy, c-format
@@ -244,7 +247,7 @@ msgstr "pa_context_set_default_source() 失败"
 
 #: ../src/pavucontrol.cc:176 ../src/pavucontrol.cc:201
 msgid "list-handlers message response could not be parsed correctly"
-msgstr ""
+msgstr "无法正确解析 list-handlers 的响应消息"
 
 #: ../src/pavucontrol.cc:227
 msgid "Card callback failure"
@@ -369,7 +372,13 @@ msgid ""
 "If this is the case, then PulseAudio should autospawn again, or if this is "
 "not configured you should\n"
 "run start-pulseaudio-x11 manually."
-msgstr ""
+msgstr "链接 PulseAudio 失败，将在5s后重试\n"
+"\n"
+"这种情况在X11环境下可能是由于PULSE_SERVER根窗口的属性导致的，\n"
+"也或者是因为 client.conf 中的 default-server 配置错误。\n"
+"当 PulseAudio 在 X11 根窗口中留下过崩溃痕迹时，也会出现这种情况。\n"
+"如果是这种情况，那么 PulseAudio 应该会再次自动生成，或者如果没有\n"
+"配置这个，那么你应该手动运行start-pulseaudio-x11。\n"
 
 #: ../src/cardwidget.cc:117
 msgid "pa_context_set_card_profile_by_index() failed"
@@ -426,11 +435,11 @@ msgstr "要重命名设备，你需要在 PulseAudio 服务器中加载 module-d
 
 #: ../src/devicewidget.cc:262
 msgid "_Cancel"
-msgstr ""
+msgstr "取消（_C）"
 
 #: ../src/devicewidget.cc:263
 msgid "_OK"
-msgstr ""
+msgstr "同意（_O）"
 
 #: ../src/devicewidget.cc:270
 msgid "pa_ext_device_manager_write() failed"
@@ -468,21 +477,21 @@ msgstr "无法从流媒体中读取数据"
 
 #: ../src/mainwindow.cc:659
 msgid "Peak detect"
-msgstr "尖峰探测"
+msgstr "峰值检测"
 
 #: ../src/mainwindow.cc:660
 msgid "Failed to create monitoring stream"
-msgstr "无法常见监视流媒体"
+msgstr "创建监控流失败"
 
 #: ../src/mainwindow.cc:675
 msgid "Failed to connect monitoring stream"
-msgstr "无法连接到监视流媒体"
+msgstr "无法连接监控流"
 
 #: ../src/mainwindow.cc:811
 msgid ""
 "Ignoring sink-input due to it being designated as an event and thus handled "
 "by the Event widget"
-msgstr ""
+msgstr "忽略接收-输入，因为它被指定为事件，因此“由event小部件”处理"
 
 #: ../src/mainwindow.cc:986
 msgid "System Sounds"
@@ -590,23 +599,23 @@ msgstr "结束"
 
 #: ../src/pavuapplication.cc:160
 msgid "Select a specific tab on load."
-msgstr ""
+msgstr "在加载时选择一个特定的选项卡。"
 
 #: ../src/pavuapplication.cc:161
 msgid "number"
-msgstr ""
+msgstr "编号"
 
 #: ../src/pavuapplication.cc:166
 msgid "Retry forever if pa quits (every 5 seconds)."
-msgstr ""
+msgstr "只要 pa 退出就会重试（每5秒）。"
 
 #: ../src/pavuapplication.cc:171
 msgid "Maximize the window."
-msgstr ""
+msgstr "最大化窗口。"
 
 #: ../src/pavuapplication.cc:176
 msgid "Show version."
-msgstr ""
+msgstr "显示版本。"
 
 #~ msgid "AC3"
 #~ msgstr "AC3"
